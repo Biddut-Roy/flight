@@ -7,13 +7,13 @@ export default function Popup() {
   const [location, setLocation] = useState('');
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 900);
+    const timer = setTimeout(() => setVisible(true), 15000);
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     if (!visible) {
-      const timer = setTimeout(() => setVisible(true), 5000);
+      const timer = setTimeout(() => setVisible(true), 15000);
       return () => clearTimeout(timer);
     }
   }, [visible]);
